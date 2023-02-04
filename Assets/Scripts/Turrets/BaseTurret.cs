@@ -12,7 +12,7 @@ public class BaseTurret : MonoBehaviour
 
     private int currentLevel = 1;
     private int maxLevel = 3;
-    private TurretScriptableObject currentSettings;
+    protected TurretScriptableObject currentSettings;
 
     Dictionary<int, TurretScriptableObject> confiByLevel = new Dictionary<int, TurretScriptableObject>();
 
