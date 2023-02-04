@@ -8,4 +8,5 @@ public class EnemyScriptableObject : ScriptableObject
     public float speed;
     public float health;
     public int reward;
+    public int points;
 }
