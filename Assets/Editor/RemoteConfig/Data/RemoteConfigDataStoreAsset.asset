@@ -12,38 +12,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
   m_Name: RemoteConfigDataStoreAsset
   m_EditorClassIdentifier: 
-  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"bdec6784-0511-4edf-a8bf-a937a542172e\"\r\n   
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"4688dacd-953c-44d0-887e-853f9fa2bca9\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"Squirrel1\",\r\n      \"type\": \"json\",\r\n     
     \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 1,\r\n       
-    \"range\": 1,\r\n        \"slowDown\": 0,\r\n        \"coolDown\": 2,\r\n       
-    \"hitEach\": 0,\r\n        \"areaEffect\": 0,\r\n        \"areaRange\": 0\r\n     
-    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"d5bdba4c-aea0-4aa2-bf41-70a2944be55a\"\r\n   
+    \"range\": 1,\r\n        \"slowDown\": 0.0,\r\n        \"cooldown\": 2.0,\r\n       
+    \"hitEach\": 0.0,\r\n        \"areaEffect\": 0,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"9d6a61ba-4faf-4d7d-bba0-bd69646849e9\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"Squirrel2\",\r\n      \"type\": \"json\",\r\n     
     \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 2,\r\n       
-    \"range\": 2,\r\n        \"slowDown\": 0,\r\n        \"coolDown\": 1,\r\n       
-    \"hitEach\": 0,\r\n        \"areaEffect\": 0,\r\n        \"areaRange\": 0\r\n     
-    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"4f753638-8fbc-434d-8ab1-5d32c12a4ab3\"\r\n   
+    \"range\": 2,\r\n        \"slowDown\": 0.0,\r\n        \"cooldown\": 1.1,\r\n       
+    \"hitEach\": 0.0,\r\n        \"areaEffect\": 0,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"a6b73417-5a2b-44c5-aa37-c2331ab6ae29\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"Squirrel3\",\r\n      \"type\": \"json\",\r\n     
     \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
-    \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"coolDown\": 1,\r\n       
-    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
-    }\r\n    }\r\n  }\r\n]"
-  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"bdec6784-0511-4edf-a8bf-a937a542172e\"\r\n   
+    \"range\": 3,\r\n        \"slowDown\": 0.0,\r\n        \"cooldown\": 1.0,\r\n       
+    \"hitEach\": 3.0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\":
+    0\r\n      }\r\n    }\r\n  }\r\n]"
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"4688dacd-953c-44d0-887e-853f9fa2bca9\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"Squirrel1\",\r\n      \"type\": \"json\",\r\n     
     \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 1,\r\n       
-    \"range\": 1,\r\n        \"slowDown\": 0,\r\n        \"coolDown\": 2,\r\n       
-    \"hitEach\": 0,\r\n        \"areaEffect\": 0,\r\n        \"areaRange\": 0\r\n     
-    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"d5bdba4c-aea0-4aa2-bf41-70a2944be55a\"\r\n   
+    \"range\": 1,\r\n        \"slowDown\": 0.0,\r\n        \"cooldown\": 2.0,\r\n       
+    \"hitEach\": 0.0,\r\n        \"areaEffect\": 0,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"9d6a61ba-4faf-4d7d-bba0-bd69646849e9\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"Squirrel2\",\r\n      \"type\": \"json\",\r\n     
     \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 2,\r\n       
-    \"range\": 2,\r\n        \"slowDown\": 0,\r\n        \"coolDown\": 1,\r\n       
-    \"hitEach\": 0,\r\n        \"areaEffect\": 0,\r\n        \"areaRange\": 0\r\n     
-    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"4f753638-8fbc-434d-8ab1-5d32c12a4ab3\"\r\n   
+    \"range\": 2,\r\n        \"slowDown\": 0.0,\r\n        \"cooldown\": 1.1,\r\n       
+    \"hitEach\": 0.0,\r\n        \"areaEffect\": 0,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"a6b73417-5a2b-44c5-aa37-c2331ab6ae29\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"Squirrel3\",\r\n      \"type\": \"json\",\r\n     
     \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
-    \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"coolDown\": 1,\r\n       
-    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
-    }\r\n    }\r\n  }\r\n]"
+    \"range\": 3,\r\n        \"slowDown\": 0.0,\r\n        \"cooldown\": 1.0,\r\n       
+    \"hitEach\": 3.0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\":
+    0\r\n      }\r\n    }\r\n  }\r\n]"
   _environments: "[\r\n  {\r\n    \"projectId\": \"17e7911e-822e-4ceb-b7ef-4d4d5d0fca13\",\r\n   
     \"name\": \"production\",\r\n    \"id\": \"60f17583-d1e6-409c-8b0a-0c19bfd4f109\",\r\n   
     \"isDefault\": true,\r\n    \"createdAt\": \"2023-02-03T23:00:08Z\",\r\n    \"updatedAt\":
