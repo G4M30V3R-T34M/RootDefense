@@ -10,18 +10,15 @@ public class AlternBottomGroups : MonoBehaviour
     [SerializeField]
     GameObject RootsBar;
 
+    [SerializeField] IntReference gameMode;
+
     private void Start() {
         ForestBar.SetActive(true);
         RootsBar.SetActive(false);
     }
 
     public void AlternBars() {
-        if(ForestBar.activeInHierarchy == true) {
-            ForestBar.SetActive(false);
-            RootsBar.SetActive(true);
-        } else {
-            ForestBar.SetActive(true);
-            RootsBar.SetActive(false);
-        }
+        ForestBar.SetActive(gameMode == (int)GameMode.DEFENSE);
+        RootsBar.SetActive(gameMode == (int)GameMode.TECHTREE);
     }
 }

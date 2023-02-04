@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d503f1659a864241868e51ff877a07e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 25ed602c3c3c80f40bff6d4be6cf40fa, type: 2}
+  Event: {fileID: 11400000, guid: b684930a3a5637e42b1848c7eda5b33d, type: 2}
   Response:
     m_PersistentCalls:
       m_Calls:
@@ -282,6 +282,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ForestBar: {fileID: 3021447992610981572}
   RootsBar: {fileID: 3021447992264559798}
+  gameMode:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: ac8e592a7e096ca47a734b16818ecbe7, type: 2}
 --- !u!1 &3021447991280813332
 GameObject:
   m_ObjectHideFlags: 0
