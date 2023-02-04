@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e566055fc39f54189614be9bdb70d6, type: 3}
   m_Name: Toadstool1
   m_EditorClassIdentifier: 
-  turretType: 0
-  damage: 0
-  range: 0
+  turretType: 2
+  damage: 1
+  range: 1
   validTile: 0
   slowDown: 0
-  cooldown: 0
+  cooldown: 2
   hitEach: 0
   areaEffect: 0
   areaRange: 0

@@ -17,7 +17,7 @@ MonoBehaviour:
   range: 3
   validTile: 0
   slowDown: 0
-  cooldown: 0
+  cooldown: 1
   hitEach: 0
   areaEffect: 1
   areaRange: 0
