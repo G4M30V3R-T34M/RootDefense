@@ -18,8 +18,8 @@ public class UpdateEnemySettings : MonoBehaviour
 
     private void ApplyRemoteSettings(ConfigResponse configResponse) {
         foreach(EnemyScriptableObject setting in enemySettings) {
-            var EnemyConfiguration = RemoteConfigService.Instance.appConfig.GetJson(setting.enemyType.ToString());
-            JsonUtility.FromJsonOverwrite(EnemyConfiguration, setting);
+            var enemyConfiguration = RemoteConfigService.Instance.appConfig.GetJson(setting.enemyType.ToString());
+            JsonUtility.FromJsonOverwrite(enemyConfiguration, setting);
         }
     }
 }
