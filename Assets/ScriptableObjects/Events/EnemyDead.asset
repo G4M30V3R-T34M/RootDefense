@@ -9,15 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e566055fc39f54189614be9bdb70d6, type: 3}
-  m_Name: Squirrel3
+  m_Script: {fileID: 11500000, guid: c5c35d4fb1cae1646bee127c1f1eb298, type: 3}
+  m_Name: EnemyDead
   m_EditorClassIdentifier: 
-  turretType: 0
-  damage: 3
-  range: 3
-  validTile: 0
-  slowDown: 0
-  cooldown: 1
-  hitEach: 0
-  areaEffect: 1
-  areaRange: 0

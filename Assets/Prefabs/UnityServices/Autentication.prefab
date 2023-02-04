@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8910199154013593787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8910199154013593786}
+  - component: {fileID: 8910199154013593776}
+  - component: {fileID: 8910199154013593777}
+  - component: {fileID: 8910199154013593790}
+  - component: {fileID: 8910199154013593791}
+  - component: {fileID: 8910199154013593788}
+  - component: {fileID: 8910199154013593789}
+  - component: {fileID: 8910199154013593779}
+  m_Layer: 0
+  m_Name: Autentication
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8910199154013593786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8910199154013593787}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8910199154013593776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8910199154013593787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e60a57081c2e44bae146828db79b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnityLoggedIn: {fileID: 11400000, guid: eaacc41bfeb49e34a85295d789a7eea1, type: 2}
+--- !u!114 &8910199154013593777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8910199154013593787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d503f1659a864241868e51ff877a07e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: eaacc41bfeb49e34a85295d789a7eea1, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8910199154013593790}
+        m_TargetAssemblyTypeName: UpdateTurretSettings, Assembly-CSharp
+        m_MethodName: UpdateSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8910199154013593791}
+        m_TargetAssemblyTypeName: UpdateTurretSettings, Assembly-CSharp
+        m_MethodName: UpdateSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8910199154013593788}
+        m_TargetAssemblyTypeName: UpdateTurretSettings, Assembly-CSharp
+        m_MethodName: UpdateSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8910199154013593789}
+        m_TargetAssemblyTypeName: UpdateTurretSettings, Assembly-CSharp
+        m_MethodName: UpdateSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8910199154013593779}
+        m_TargetAssemblyTypeName: UpdateEnemySettings, Assembly-CSharp
+        m_MethodName: UpdateSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8910199154013593790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8910199154013593787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a23b80a8cabbcc043bf9adc4577474f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level1Config: {fileID: 11400000, guid: 1b00d25aed625564a92eeb6018560ee5, type: 2}
+  level2Config: {fileID: 11400000, guid: 5fbd9023abe65b0499d8e73c15c34a78, type: 2}
+  level3Config: {fileID: 11400000, guid: e80f07129a58a2e45b01b8676f94bf5f, type: 2}
+--- !u!114 &8910199154013593791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8910199154013593787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a23b80a8cabbcc043bf9adc4577474f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level1Config: {fileID: 11400000, guid: d00cf0f09191aeb4fb1781767cd737cb, type: 2}
+  level2Config: {fileID: 11400000, guid: 716aaee1d60bf434b87e4d87dfe071ec, type: 2}
+  level3Config: {fileID: 11400000, guid: 441835104d823884cbd358c03f878142, type: 2}
+--- !u!114 &8910199154013593788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8910199154013593787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a23b80a8cabbcc043bf9adc4577474f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level1Config: {fileID: 11400000, guid: 9cb7097984ccdd848b6aa4f1ca98b4f6, type: 2}
+  level2Config: {fileID: 11400000, guid: ad25f08094a3fb74ca3efbaf8daa9d8f, type: 2}
+  level3Config: {fileID: 11400000, guid: 122affbd3b4aa364699e6a47ce9bb942, type: 2}
+--- !u!114 &8910199154013593789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8910199154013593787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a23b80a8cabbcc043bf9adc4577474f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level1Config: {fileID: 11400000, guid: 390375049fbec7b4cb3da735afd4d8ec, type: 2}
+  level2Config: {fileID: 11400000, guid: ad6f9cbf6cf005543ad2ffcf55543ad9, type: 2}
+  level3Config: {fileID: 11400000, guid: 52e03c17082b9df4fae168f7e6f551d5, type: 2}
+--- !u!114 &8910199154013593779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8910199154013593787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1cb324346caed49a9c91d8a7d4c37c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySettings:
+  - {fileID: 11400000, guid: 66659fa5b7ba21d48bde8babc7c7715d, type: 2}
+  - {fileID: 11400000, guid: 4b03eae540f199c4e8266b5548469064, type: 2}
+  - {fileID: 11400000, guid: d89c0faf2bec9c24e9ffe1a6de359c22, type: 2}
