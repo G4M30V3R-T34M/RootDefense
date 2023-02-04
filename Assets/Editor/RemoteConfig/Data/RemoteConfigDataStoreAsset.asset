@@ -12,176 +12,166 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
   m_Name: RemoteConfigDataStoreAsset
   m_EditorClassIdentifier: 
-  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"56d008de-70cd-4a55-b586-440728b322c5\"\r\n   
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"8edd360e-dc8d-4e11-9fde-cd967b455d61\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"Squirrel1\",\r\n      \"type\": \"json\",\r\n     
     \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 1,\r\n       
-    \"range\": 1,\r\n        \"cost\": 50,\r\n        \"slowDown\": 0,\r\n       
-    \"cooldown\": 2.1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": 0,\r\n       
-    \"areaRange\": 0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"b46005a6-04ca-4fd9-bb26-31b08dc66a97\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"Squirrel2\",\r\n      \"type\": \"json\",\r\n      \"schemaId\":
-    null,\r\n      \"value\": {\r\n        \"damage\": 2,\r\n        \"range\": 2,\r\n       
-    \"cost\": 50,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
+    \"range\": 1,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 2.1,\r\n       
     \"hitEach\": 0,\r\n        \"areaEffect\": 0,\r\n        \"areaRange\": 0\r\n     
-    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"17581ab4-60c9-49fc-8382-33957f1cdd3b\"\r\n   
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"326644c8-63c3-4c0d-8569-b33eab1a5466\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Squirrel2\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 2,\r\n       
+    \"range\": 2,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
+    \"hitEach\": 0,\r\n        \"areaEffect\": 0,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"e6d3430c-b47d-42a1-b1f8-1e6094a3bd32\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"Squirrel3\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
-    \"range\": 3,\r\n        \"cost\": 50,\r\n        \"slowDown\": 0,\r\n       
-    \"cooldown\": 1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n       
-    \"areaRange\": 0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"84ae5a87-9091-4552-aa3c-533645fe0cb7\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"Bramble1\",\r\n      \"type\": \"json\",\r\n      \"schemaId\":
-    null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n        \"range\": 3,\r\n       
-    \"cost\": 50,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
-    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
-    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"41ff79d8-2084-4802-8751-3fd9b1bb50c4\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"Bramble2\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
-    \"range\": 3,\r\n        \"cost\": 50,\r\n        \"slowDown\": 0,\r\n       
-    \"cooldown\": 1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n       
-    \"areaRange\": 0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"10bb4353-ad43-4674-b61d-5fa22b7a50d8\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"Bramble3\",\r\n      \"type\": \"json\",\r\n      \"schemaId\":
-    null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n        \"range\": 3,\r\n       
-    \"cost\": 50,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
-    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
-    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"9024c8dc-693f-4742-90c4-d58fdfe89544\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"Toadstool1\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
-    \"range\": 3,\r\n        \"cost\": 50,\r\n        \"slowDown\": 0,\r\n       
-    \"cooldown\": 1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n       
-    \"areaRange\": 0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"35c83770-7316-43f5-8844-6790a38c7d58\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"Toadstool2\",\r\n      \"type\": \"json\",\r\n      \"schemaId\":
-    null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n        \"range\": 3,\r\n       
-    \"cost\": 50,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
-    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
-    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"d83d23cc-b383-4d68-a18f-04feb6aaae19\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"Toadstool3\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
-    \"range\": 3,\r\n        \"cost\": 50,\r\n        \"slowDown\": 0,\r\n       
-    \"cooldown\": 1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n       
-    \"areaRange\": 0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"b6a98f6d-00c6-42d1-9003-fecd48f224a6\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"WhompingWillow1\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
-    \"range\": 3,\r\n        \"cost\": 50,\r\n        \"slowDown\": 0,\r\n       
-    \"cooldown\": 1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n       
-    \"areaRange\": 0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"c53e4f6a-b28b-4113-8316-bfb65ad2a11d\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"WhompingWillow2\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
-    \"range\": 3,\r\n        \"cost\": 50,\r\n        \"slowDown\": 0,\r\n       
-    \"cooldown\": 1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n       
-    \"areaRange\": 0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"f244d584-0e0f-4445-b19b-a18ce70454b6\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"WhompingWillow3\",\r\n      \"type\": \"json\",\r\n     
     \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
     \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
     \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
-    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"8e4500a8-3200-4c8d-9c05-356453de50b6\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"FastEnemy\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 4,\r\n       
-    \"speed\": 3,\r\n        \"health\": 2,\r\n        \"reward\": 50\r\n      }\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"5ab7e811-d09c-49cf-904b-1b47d51a1ecc\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"SlowEnemy\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 6,\r\n       
-    \"speed\": 1,\r\n        \"health\": 5,\r\n        \"reward\": 50\r\n      }\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"8efe51c1-baf7-4b43-84fd-d6b9e9571cf1\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"NormalEnemy\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
-    \"speed\": 2,\r\n        \"health\": 4,\r\n        \"reward\": 50\r\n      }\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"bd4f9456-8cb9-43c6-92d0-657b07dad9f0\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"SpawnerSettings\",\r\n      \"type\":
-    \"json\",\r\n      \"schemaId\": null,\r\n      \"value\": {\r\n        \"timeBetweenSpawn\":
-    1,\r\n        \"timeBetweenWave\": 4,\r\n        \"numberOfEnemies\": 30,\r\n       
-    \"normalEnemyPerc\": 60,\r\n        \"fastEnemyPerc\": 25,\r\n        \"slowEnemyPerc\":
-    15\r\n      }\r\n    }\r\n  }\r\n]"
-  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"56d008de-70cd-4a55-b586-440728b322c5\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"Squirrel1\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 1,\r\n       
-    \"range\": 1,\r\n        \"cost\": 50,\r\n        \"slowDown\": 0,\r\n       
-    \"cooldown\": 2.1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": 0,\r\n       
-    \"areaRange\": 0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"b46005a6-04ca-4fd9-bb26-31b08dc66a97\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"Squirrel2\",\r\n      \"type\": \"json\",\r\n      \"schemaId\":
-    null,\r\n      \"value\": {\r\n        \"damage\": 2,\r\n        \"range\": 2,\r\n       
-    \"cost\": 50,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
-    \"hitEach\": 0,\r\n        \"areaEffect\": 0,\r\n        \"areaRange\": 0\r\n     
-    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"17581ab4-60c9-49fc-8382-33957f1cdd3b\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"Squirrel3\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
-    \"range\": 3,\r\n        \"cost\": 50,\r\n        \"slowDown\": 0,\r\n       
-    \"cooldown\": 1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n       
-    \"areaRange\": 0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"84ae5a87-9091-4552-aa3c-533645fe0cb7\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"Bramble1\",\r\n      \"type\": \"json\",\r\n      \"schemaId\":
-    null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n        \"range\": 3,\r\n       
-    \"cost\": 50,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
-    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
-    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"41ff79d8-2084-4802-8751-3fd9b1bb50c4\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"Bramble2\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
-    \"range\": 3,\r\n        \"cost\": 50,\r\n        \"slowDown\": 0,\r\n       
-    \"cooldown\": 1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n       
-    \"areaRange\": 0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"10bb4353-ad43-4674-b61d-5fa22b7a50d8\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"Bramble3\",\r\n      \"type\": \"json\",\r\n      \"schemaId\":
-    null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n        \"range\": 3,\r\n       
-    \"cost\": 50,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
-    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
-    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"9024c8dc-693f-4742-90c4-d58fdfe89544\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"Toadstool1\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
-    \"range\": 3,\r\n        \"cost\": 50,\r\n        \"slowDown\": 0,\r\n       
-    \"cooldown\": 1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n       
-    \"areaRange\": 0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"35c83770-7316-43f5-8844-6790a38c7d58\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"Toadstool2\",\r\n      \"type\": \"json\",\r\n      \"schemaId\":
-    null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n        \"range\": 3,\r\n       
-    \"cost\": 50,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
-    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
-    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"d83d23cc-b383-4d68-a18f-04feb6aaae19\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"Toadstool3\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
-    \"range\": 3,\r\n        \"cost\": 50,\r\n        \"slowDown\": 0,\r\n       
-    \"cooldown\": 1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n       
-    \"areaRange\": 0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"b6a98f6d-00c6-42d1-9003-fecd48f224a6\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"WhompingWillow1\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
-    \"range\": 3,\r\n        \"cost\": 50,\r\n        \"slowDown\": 0,\r\n       
-    \"cooldown\": 1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n       
-    \"areaRange\": 0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"c53e4f6a-b28b-4113-8316-bfb65ad2a11d\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"WhompingWillow2\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
-    \"range\": 3,\r\n        \"cost\": 50,\r\n        \"slowDown\": 0,\r\n       
-    \"cooldown\": 1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n       
-    \"areaRange\": 0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
-    \"entityId\": \"f244d584-0e0f-4445-b19b-a18ce70454b6\"\r\n    },\r\n    \"rs\":
-    {\r\n      \"key\": \"WhompingWillow3\",\r\n      \"type\": \"json\",\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"edcb5140-459d-4f3e-9961-b739f36c88de\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Bramble1\",\r\n      \"type\": \"json\",\r\n     
     \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
     \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
     \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
-    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"8e4500a8-3200-4c8d-9c05-356453de50b6\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"FastEnemy\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 4,\r\n       
-    \"speed\": 3,\r\n        \"health\": 2,\r\n        \"reward\": 50\r\n      }\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"5ab7e811-d09c-49cf-904b-1b47d51a1ecc\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"SlowEnemy\",\r\n      \"type\": \"json\",\r\n     
-    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 6,\r\n       
-    \"speed\": 1,\r\n        \"health\": 5,\r\n        \"reward\": 50\r\n      }\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"8efe51c1-baf7-4b43-84fd-d6b9e9571cf1\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"NormalEnemy\",\r\n      \"type\": \"json\",\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"8e360763-00da-4062-b2e0-6fe13f5e7ba0\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Bramble2\",\r\n      \"type\": \"json\",\r\n     
     \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
-    \"speed\": 2,\r\n        \"health\": 4,\r\n        \"reward\": 50\r\n      }\r\n   
-    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"bd4f9456-8cb9-43c6-92d0-657b07dad9f0\"\r\n   
-    },\r\n    \"rs\": {\r\n      \"key\": \"SpawnerSettings\",\r\n      \"type\":
-    \"json\",\r\n      \"schemaId\": null,\r\n      \"value\": {\r\n        \"timeBetweenSpawn\":
-    1,\r\n        \"timeBetweenWave\": 4,\r\n        \"numberOfEnemies\": 30,\r\n       
-    \"normalEnemyPerc\": 60,\r\n        \"fastEnemyPerc\": 25,\r\n        \"slowEnemyPerc\":
-    15\r\n      }\r\n    }\r\n  }\r\n]"
+    \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
+    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"05b9d0a2-8eec-4c46-903b-ef022d8f898d\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Bramble3\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
+    \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
+    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"98ce4fc0-0f38-4d99-bc30-9cb38caaaab6\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Toadstool1\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
+    \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
+    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"923f65cb-2537-4320-b291-82344d438de1\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Toadstool2\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
+    \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
+    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"ad372eb6-4e2e-4679-a851-4d402d728f24\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Toadstool3\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
+    \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
+    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"030b24c4-6324-4894-9376-7e5ef628347d\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"WhompingWillow1\",\r\n      \"type\":
+    \"json\",\r\n      \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\":
+    3,\r\n        \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\":
+    1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\":
+    0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"538d8cc8-d411-4573-ad8a-8a5855abbc7b\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"WhompingWillow2\",\r\n      \"type\": \"json\",\r\n      \"schemaId\":
+    null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n        \"range\": 3,\r\n       
+    \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n        \"hitEach\": 0,\r\n       
+    \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n      }\r\n    }\r\n  },\r\n 
+    {\r\n    \"metadata\": {\r\n      \"entityId\": \"21f46661-19d0-4202-ba3b-d43dd744546b\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"WhompingWillow3\",\r\n      \"type\":
+    \"json\",\r\n      \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\":
+    3,\r\n        \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\":
+    1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\":
+    0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"e3b8e010-02c6-455f-9022-2d7e53a56fdc\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"FastEnemy\",\r\n      \"type\": \"json\",\r\n      \"schemaId\": null,\r\n     
+    \"value\": {\r\n        \"damage\": 4,\r\n        \"speed\": 3,\r\n        \"health\":
+    2\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"5c99f167-6b4a-4d3e-9b06-b92a6c91e75d\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"SlowEnemy\",\r\n      \"type\": \"json\",\r\n      \"schemaId\": null,\r\n     
+    \"value\": {\r\n        \"damage\": 6,\r\n        \"speed\": 1,\r\n        \"health\":
+    5\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"729b191e-15c7-48ce-81e4-8fadf4016b62\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"NormalEnemy\",\r\n      \"type\": \"json\",\r\n      \"schemaId\":
+    null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n        \"speed\": 2,\r\n       
+    \"health\": 4\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
+    \"entityId\": \"8eea69f0-fcd2-4463-b724-29a36fac143d\"\r\n    },\r\n    \"rs\":
+    {\r\n      \"key\": \"SpawnerSettings\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"timeBetweenSpawn\": 1,\r\n       
+    \"timeBetweenWave\": 4,\r\n        \"numberOfEnemies\": 30,\r\n        \"normalEnemyPerc\":
+    60,\r\n        \"fastEnemyPerc\": 25,\r\n        \"slowEnemyPerc\": 15\r\n     
+    }\r\n    }\r\n  }\r\n]"
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"8edd360e-dc8d-4e11-9fde-cd967b455d61\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Squirrel1\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 1,\r\n       
+    \"range\": 1,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 2.1,\r\n       
+    \"hitEach\": 0,\r\n        \"areaEffect\": 0,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"326644c8-63c3-4c0d-8569-b33eab1a5466\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Squirrel2\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 2,\r\n       
+    \"range\": 2,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
+    \"hitEach\": 0,\r\n        \"areaEffect\": 0,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"e6d3430c-b47d-42a1-b1f8-1e6094a3bd32\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Squirrel3\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
+    \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
+    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"edcb5140-459d-4f3e-9961-b739f36c88de\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Bramble1\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
+    \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
+    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"8e360763-00da-4062-b2e0-6fe13f5e7ba0\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Bramble2\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
+    \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
+    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"05b9d0a2-8eec-4c46-903b-ef022d8f898d\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Bramble3\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
+    \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
+    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"98ce4fc0-0f38-4d99-bc30-9cb38caaaab6\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Toadstool1\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
+    \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
+    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"923f65cb-2537-4320-b291-82344d438de1\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Toadstool2\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
+    \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
+    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"ad372eb6-4e2e-4679-a851-4d402d728f24\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Toadstool3\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n       
+    \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n       
+    \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n     
+    }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"030b24c4-6324-4894-9376-7e5ef628347d\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"WhompingWillow1\",\r\n      \"type\":
+    \"json\",\r\n      \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\":
+    3,\r\n        \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\":
+    1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\":
+    0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"538d8cc8-d411-4573-ad8a-8a5855abbc7b\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"WhompingWillow2\",\r\n      \"type\": \"json\",\r\n      \"schemaId\":
+    null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n        \"range\": 3,\r\n       
+    \"slowDown\": 0,\r\n        \"cooldown\": 1,\r\n        \"hitEach\": 0,\r\n       
+    \"areaEffect\": true,\r\n        \"areaRange\": 0\r\n      }\r\n    }\r\n  },\r\n 
+    {\r\n    \"metadata\": {\r\n      \"entityId\": \"21f46661-19d0-4202-ba3b-d43dd744546b\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"WhompingWillow3\",\r\n      \"type\":
+    \"json\",\r\n      \"schemaId\": null,\r\n      \"value\": {\r\n        \"damage\":
+    3,\r\n        \"range\": 3,\r\n        \"slowDown\": 0,\r\n        \"cooldown\":
+    1,\r\n        \"hitEach\": 0,\r\n        \"areaEffect\": true,\r\n        \"areaRange\":
+    0\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"e3b8e010-02c6-455f-9022-2d7e53a56fdc\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"FastEnemy\",\r\n      \"type\": \"json\",\r\n      \"schemaId\": null,\r\n     
+    \"value\": {\r\n        \"damage\": 4,\r\n        \"speed\": 3,\r\n        \"health\":
+    2\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"5c99f167-6b4a-4d3e-9b06-b92a6c91e75d\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"SlowEnemy\",\r\n      \"type\": \"json\",\r\n      \"schemaId\": null,\r\n     
+    \"value\": {\r\n        \"damage\": 6,\r\n        \"speed\": 1,\r\n        \"health\":
+    5\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"729b191e-15c7-48ce-81e4-8fadf4016b62\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"NormalEnemy\",\r\n      \"type\": \"json\",\r\n      \"schemaId\":
+    null,\r\n      \"value\": {\r\n        \"damage\": 3,\r\n        \"speed\": 2,\r\n       
+    \"health\": 4\r\n      }\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
+    \"entityId\": \"8eea69f0-fcd2-4463-b724-29a36fac143d\"\r\n    },\r\n    \"rs\":
+    {\r\n      \"key\": \"SpawnerSettings\",\r\n      \"type\": \"json\",\r\n     
+    \"schemaId\": null,\r\n      \"value\": {\r\n        \"timeBetweenSpawn\": 1,\r\n       
+    \"timeBetweenWave\": 4,\r\n        \"numberOfEnemies\": 30,\r\n        \"normalEnemyPerc\":
+    60,\r\n        \"fastEnemyPerc\": 25,\r\n        \"slowEnemyPerc\": 15\r\n     
+    }\r\n    }\r\n  }\r\n]"
   _environments: "[\r\n  {\r\n    \"projectId\": \"17e7911e-822e-4ceb-b7ef-4d4d5d0fca13\",\r\n   
     \"name\": \"production\",\r\n    \"id\": \"60f17583-d1e6-409c-8b0a-0c19bfd4f109\",\r\n   
     \"isDefault\": true,\r\n    \"createdAt\": \"2023-02-03T23:00:08Z\",\r\n    \"updatedAt\":

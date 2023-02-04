@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnerSettings: {fileID: 11400000, guid: 3f94b686b2568e3409c26ed23ab63c89, type: 2}
+  waves: {fileID: 11400000, guid: 7aa7d7f1db840d54ca2abf846b898574, type: 2}
   SpawnNormalEnemy: {fileID: 11400000, guid: 0563fc5a9f257df4d8c706586ed96ac0, type: 2}
   SpawnFastEnemy: {fileID: 11400000, guid: 6f3643076f9debb449be03e6ab734211, type: 2}
   SpawnSlowEnemy: {fileID: 11400000, guid: 967c274f9332e5746886d815de967d32, type: 2}

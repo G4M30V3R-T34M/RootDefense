@@ -75,6 +75,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemySettings: {fileID: 11400000, guid: d89c0faf2bec9c24e9ffe1a6de359c22, type: 2}
+  score: {fileID: 11400000, guid: 0eea277d0c11bae4ba8c34e628cec8c2, type: 2}
 --- !u!136 &6506993849264590572
 CapsuleCollider:
   m_ObjectHideFlags: 0

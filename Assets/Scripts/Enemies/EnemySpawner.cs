@@ -7,6 +7,9 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     EnemySpawnerScriptableObject spawnerSettings;
 
+    [SerializeField]
+    FloatVariable waves;
+
     private int spawnedEnemies;
     private Coroutine spawnCoroutine;
 
@@ -17,26 +20,26 @@ public class EnemySpawner : MonoBehaviour
     private float totalEnemyPercents;
 
     private void Start() {
+        waves.SetValue(1);
         spawnedEnemies = 0;
         totalEnemyPercents = spawnerSettings.slowEnemyPerc + spawnerSettings.normalEnemyPerc + spawnerSettings.fastEnemyPerc;
-        Debug.Log(totalEnemyPercents);
         spawnCoroutine = StartCoroutine(SpawnCoroutine());
     }
 
     private IEnumerator SpawnCoroutine() {
         while (true) {
             spawnedEnemies = 0;
-            yield return new WaitForSeconds(spawnerSettings.timeBetweenSpawn);
+            yield return new WaitForSeconds(spawnerSettings.timeBetweenWave);
             while(spawnedEnemies < spawnerSettings.numberOfEnemies) {
                 RaiseSpawnEvent();
                 yield return new WaitForSeconds(spawnerSettings.timeBetweenSpawn);
             }
+            waves.ApplyChange(1);
         }
     }
 
     private void RaiseSpawnEvent() {
         float percent = Random.Range(0.0f, totalEnemyPercents);
-        Debug.Log(percent);
         if(percent < spawnerSettings.normalEnemyPerc) {
             SpawnNormalEnemy.Raise();
         } else if (percent < spawnerSettings.normalEnemyPerc + spawnerSettings.fastEnemyPerc) {
