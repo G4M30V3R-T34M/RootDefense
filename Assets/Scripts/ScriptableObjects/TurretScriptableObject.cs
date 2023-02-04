@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "TurretScriptableObject", menuName = "Scriptables/TurretScriptableObject", order = 1)]
@@ -10,6 +8,7 @@ public class TurretScriptableObject : ScriptableObject
     public int damage;
     public int range;
     public TileType validTile;
+    public int cost;
 
     [Header("Time configurations in seconds")]
     public float slowDown;
