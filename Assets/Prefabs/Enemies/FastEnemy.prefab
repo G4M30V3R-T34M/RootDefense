@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6506993849264590573}
   - component: {fileID: 6506993849264590572}
   m_Layer: 0
-  m_Name: enemy
+  m_Name: FastEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d347b45a636c4de4bb411389003382a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySettings: {fileID: 11400000, guid: 4b03eae540f199c4e8266b5548469064, type: 2}
+  enemySettings: {fileID: 11400000, guid: 66659fa5b7ba21d48bde8babc7c7715d, type: 2}
 --- !u!136 &6506993849264590572
 CapsuleCollider:
   m_ObjectHideFlags: 0

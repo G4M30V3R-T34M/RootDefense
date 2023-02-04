@@ -1,14 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-using Unity.Services.Core;
-using Unity.Services.Authentication;
-
-using System.Threading.Tasks;
-using Unity.Services.RemoteConfig;
-using UnityEditor.PackageManager;
-using System.Xml;
 
 public class BaseTurret : MonoBehaviour
 {

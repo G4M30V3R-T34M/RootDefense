@@ -1,17 +1,9 @@
-using System.Collections.Generic;
 using UnityEngine;
 
-using Unity.Services.Core;
-using Unity.Services.Authentication;
-
-using System.Threading.Tasks;
-using Unity.Services.RemoteConfig;
-using UnityEditor.PackageManager;
-using System.Xml;
-using Unity.IO.LowLevel.Unsafe;
+using FeTo.ObjectPool;
 
 [RequireComponent(typeof(HealthManager))]
-public class Enemy : MonoBehaviour
+public class Enemy : PoolableObject
 {
     [SerializeField]
     private EnemyScriptableObject enemySettings;
