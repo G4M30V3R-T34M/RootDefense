@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0506f79917a7bfa4aad19e24e0f2664c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyPool: {fileID: 4246007699088016942}
+  enemyPool: {fileID: 4246007699088016942}
 --- !u!1 &4246007700626547855
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 4246007700626547853}
   - component: {fileID: 4246007700626547850}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: EnemySpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0506f79917a7bfa4aad19e24e0f2664c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyPool: {fileID: 4246007700756764123}
+  enemyPool: {fileID: 4246007700756764123}
 --- !u!1 &4246007700892711899
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,4 +324,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0506f79917a7bfa4aad19e24e0f2664c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyPool: {fileID: 4246007700892711879}
+  enemyPool: {fileID: 4246007700892711879}
