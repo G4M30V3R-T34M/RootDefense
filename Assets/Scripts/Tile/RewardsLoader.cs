@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TechTreeManager : MonoBehaviour
+public class RewardsLoader : MonoBehaviour
 {
     [SerializeField] Map tileMap;
 
