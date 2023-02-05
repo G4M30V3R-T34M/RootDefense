@@ -40,7 +40,7 @@ public class RewardsLoader : MonoBehaviour
             do {
                 int assignRow = UnityEngine.Random.Range(0, rows);
                 tile = tileMap.GetTile(assignRow, column);
-            } while (tile.HasReward);
+            } while (tile.HasRoot || tile.HasReward);
             tile.SetReward(reward);
 
             if (--column < 0 ) {
