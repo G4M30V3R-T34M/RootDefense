@@ -2170,6 +2170,10 @@ PrefabInstance:
       propertyPath: hasTurret
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6014704694380301790, guid: 5b461cd385313f642b98e90ef36de134, type: 3}
+      propertyPath: distanceToTree
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6677545401733732390, guid: 5b461cd385313f642b98e90ef36de134, type: 3}
       propertyPath: m_IsActive
       value: 0

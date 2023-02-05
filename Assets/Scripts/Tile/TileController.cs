@@ -16,13 +16,21 @@ public class TileController : MonoBehaviour
 
     private bool hasReward = false;
     private TurretType reward;
+    [SerializeField] private int distanceToTree = -1;
 
     Animator animator;
     private const string TRIGGER_CONSUME = "Consume";
 
+    private int row, column;
+
     public bool HasRoot { get { return hasRoot; } }
     public bool HasTurret { get { return hasTurret; } }
     public bool HasReward { get { return hasReward; } }
+    public int DistanceToTree { get { return distanceToTree; } }
+    public int Row { get { return row; } }
+    public int Column { get { return column; } }
+    public TurretType Reward { get { return reward; } }
+
 
     private void Awake() {
         rewardIndicator.SetActive(false);
@@ -35,7 +43,7 @@ public class TileController : MonoBehaviour
         reward = turretType;
     }
 
-    public void GetReward() {
+    private void GetReward() {
         resourcesToGrowTrees.ApplyChange(RESOURE_REWARD);
 
         if (hasReward) {
@@ -59,5 +67,19 @@ public class TileController : MonoBehaviour
                 whoopingwhillowMaxLevel.ApplyChange(1);
                 break;
         }
+    }
+
+    public void StartConnect() {
+        hasRoot = true;
+    }
+
+    public void FinishConnect(int distance) {
+        distanceToTree = distance;
+        GetReward();
+    }
+
+    public void SetCoordinates(int row, int col) {
+        this.row = row;
+        this.column = col;
     }
 }
