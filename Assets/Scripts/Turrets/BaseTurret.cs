@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BaseTurret : PoolableObject
 {
+    [Header("Scriptable Levels")]
     [SerializeField] 
     private TurretScriptableObject level1Config;
     [SerializeField] 
@@ -11,16 +12,30 @@ public class BaseTurret : PoolableObject
     [SerializeField] 
     private TurretScriptableObject level3Config;
 
+    [Header("Own Components")]
+    [SerializeField]
+    protected SphereCollider turretCollider;
+    [SerializeField]
+    protected Animator animator;
+
     private int currentLevel = 1;
     private int maxLevel = 3;
     protected TurretScriptableObject currentSettings;
 
     Dictionary<int, TurretScriptableObject> confiByLevel = new Dictionary<int, TurretScriptableObject>();
 
+    protected List<GameObject> targets = new List<GameObject>();
+    protected float timeFromLastAttack;
+
     private void Awake() {
         // Init level dictionary
         InitLevelDict();
         currentSettings = confiByLevel[currentLevel];
+    }
+
+    protected void Start() {
+        turretCollider.radius = currentSettings.range;
+        timeFromLastAttack = currentSettings.cooldown;
     }
 
     private void InitLevelDict() {
@@ -39,5 +54,21 @@ public class BaseTurret : PoolableObject
 
     public bool CanBeUpgraded() {
         return currentLevel < maxLevel;
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.layer == (int)Layer.Enemy) {
+            targets.Add(other.gameObject);
+        }
+    }
+
+    private void OnTriggerExit(Collider other) {
+        if (other.gameObject.layer == (int)Layer.Enemy) {
+            targets.Remove(other.gameObject);
+        }
+    }
+
+    protected bool CanAttack() {
+        return timeFromLastAttack >= currentSettings.cooldown && targets.Count > 0;
     }
 }

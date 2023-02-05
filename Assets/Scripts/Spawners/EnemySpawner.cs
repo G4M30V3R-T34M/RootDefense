@@ -28,11 +28,12 @@ public class EnemySpawner : MonoBehaviour
     private IEnumerator SpawnCoroutine() {
         while (true) {
             spawnedEnemies = 0;
-            yield return new WaitForSeconds(spawnerSettings.timeBetweenWave);
             while(spawnedEnemies < spawnerSettings.numberOfEnemies) {
                 RaiseSpawnEvent();
+                spawnedEnemies += 1;
                 yield return new WaitForSeconds(spawnerSettings.timeBetweenSpawn);
             }
+            yield return new WaitForSeconds(spawnerSettings.timeBetweenWave);
             waves.ApplyChange(1);
         }
     }

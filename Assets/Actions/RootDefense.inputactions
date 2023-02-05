@@ -42,9 +42,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "SelectTurretType",
+                    "name": "SelectSquirrel",
                     "type": "Button",
-                    "id": "efa8532c-7a89-4a8e-bcaf-21b0ef57e22b",
+                    "id": "9485d6db-b783-4be1-a3b3-9a2a454ac63a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SelectWhomping",
+                    "type": "Button",
+                    "id": "36306711-2e74-436c-a51f-a44b943b9c60",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -285,56 +294,23 @@
                 },
                 {
                     "name": "",
-                    "id": "bf25ce1a-adf9-4daf-8afd-e638d92a47ab",
+                    "id": "2417398e-8645-4178-a673-cff7f4e28782",
                     "path": "<Keyboard>/1",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "SelectTurretType",
+                    "action": "SelectSquirrel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "8d4c01ff-164b-496f-b530-10010cfe2c09",
-                    "path": "<Keyboard>/2",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "SelectTurretType",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "83b748a8-f273-4729-8352-a31a26930504",
-                    "path": "<Keyboard>/3",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "SelectTurretType",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c8b6bfc1-d776-4870-9400-fa619d6bf1b9",
+                    "id": "037438e4-5e25-4b23-9940-021edd64cc17",
                     "path": "<Keyboard>/4",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "SelectTurretType",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a17d7037-722c-4b29-9810-bac4a18285a5",
-                    "path": "<Keyboard>/5",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SelectTurretType",
+                    "action": "SelectWhomping",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

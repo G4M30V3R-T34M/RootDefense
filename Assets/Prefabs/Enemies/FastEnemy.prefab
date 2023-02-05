@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 960147105248099418, guid: 7a2cdbfc7df2c4740a9069fcd7ec8848, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2782807e094240a4899bd1d7b61f9753, type: 2}
     - target: {fileID: 6506993849264590563, guid: 7a2cdbfc7df2c4740a9069fcd7ec8848, type: 3}
       propertyPath: m_Name
       value: FastEnemy
