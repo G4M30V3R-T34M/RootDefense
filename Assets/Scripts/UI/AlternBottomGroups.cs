@@ -16,7 +16,6 @@ public class AlternBottomGroups : MonoBehaviour
     }
 
     public void AlternBars() {
-        print("iscalled");
         if(ForestBar.activeInHierarchy == true) {
             ForestBar.SetActive(false);
             RootsBar.SetActive(true);

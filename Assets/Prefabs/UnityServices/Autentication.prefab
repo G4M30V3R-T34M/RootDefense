@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 8910199154013593788}
   - component: {fileID: 8910199154013593789}
   - component: {fileID: 8910199154013593779}
+  - component: {fileID: 862989708}
+  - component: {fileID: 862989717}
   m_Layer: 0
   m_Name: Autentication
   m_TagString: Untagged
@@ -127,6 +129,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 862989708}
+        m_TargetAssemblyTypeName: UpdateEnemySpawnerSettings, Assembly-CSharp
+        m_MethodName: UpdateSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 862989717}
+        m_TargetAssemblyTypeName: UpdateSettingsByKeySettings, Assembly-CSharp
+        m_MethodName: UpdateSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8910199154013593790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,3 +229,31 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 66659fa5b7ba21d48bde8babc7c7715d, type: 2}
   - {fileID: 11400000, guid: 4b03eae540f199c4e8266b5548469064, type: 2}
   - {fileID: 11400000, guid: d89c0faf2bec9c24e9ffe1a6de359c22, type: 2}
+--- !u!114 &862989708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8910199154013593787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3935b2ef4c654594789f999cc1b8c9b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  remoteKey: SpawnerSettings
+  scriptableSettings: {fileID: 11400000, guid: 3f94b686b2568e3409c26ed23ab63c89, type: 2}
+--- !u!114 &862989717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8910199154013593787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3935b2ef4c654594789f999cc1b8c9b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  remoteKey: Accorn
+  scriptableSettings: {fileID: 11400000, guid: 52f61aa8eaa97814c8b494c07121349b, type: 2}

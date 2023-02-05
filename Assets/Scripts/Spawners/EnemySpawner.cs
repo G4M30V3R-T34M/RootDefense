@@ -20,7 +20,6 @@ public class EnemySpawner : MonoBehaviour
     private float totalEnemyPercents;
 
     private void Start() {
-        waves.SetValue(1);
         spawnedEnemies = 0;
         totalEnemyPercents = spawnerSettings.slowEnemyPerc + spawnerSettings.normalEnemyPerc + spawnerSettings.fastEnemyPerc;
         spawnCoroutine = StartCoroutine(SpawnCoroutine());

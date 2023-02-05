@@ -1,7 +1,8 @@
+using FeTo.ObjectPool;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseTurret : MonoBehaviour
+public class BaseTurret : PoolableObject
 {
     [SerializeField] 
     private TurretScriptableObject level1Config;
@@ -12,7 +13,7 @@ public class BaseTurret : MonoBehaviour
 
     private int currentLevel = 1;
     private int maxLevel = 3;
-    private TurretScriptableObject currentSettings;
+    protected TurretScriptableObject currentSettings;
 
     Dictionary<int, TurretScriptableObject> confiByLevel = new Dictionary<int, TurretScriptableObject>();
 
