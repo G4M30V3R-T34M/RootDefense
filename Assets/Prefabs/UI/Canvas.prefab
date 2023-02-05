@@ -282,10 +282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ForestBar: {fileID: 3021447992610981572}
   RootsBar: {fileID: 3021447992264559798}
-  gameMode:
-    UseConstant: 0
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: ac8e592a7e096ca47a734b16818ecbe7, type: 2}
+  gameMode: {fileID: 11400000, guid: ac8e592a7e096ca47a734b16818ecbe7, type: 2}
 --- !u!1 &3021447991280813332
 GameObject:
   m_ObjectHideFlags: 0
