@@ -30,6 +30,7 @@ public class EnemySpawner : MonoBehaviour
             spawnedEnemies = 0;
             while(spawnedEnemies < spawnerSettings.numberOfEnemies) {
                 RaiseSpawnEvent();
+                spawnedEnemies += 1;
                 yield return new WaitForSeconds(spawnerSettings.timeBetweenSpawn);
             }
             yield return new WaitForSeconds(spawnerSettings.timeBetweenWave);

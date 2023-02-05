@@ -17,6 +17,7 @@ public class WhompingWillowTurret : BaseTurret
         timeFromLastAttack += Time.deltaTime;
         if (CanAttack()) {
             animator.SetTrigger("Attack");
+            timeFromLastAttack = 0;
         }
     }
 
