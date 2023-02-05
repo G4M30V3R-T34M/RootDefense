@@ -17,6 +17,7 @@ public class TileController : MonoBehaviour
     private bool hasReward = false;
     private TurretType reward;
     [SerializeField] private int distanceToTree = -1;
+    [SerializeField] private TileType tileType;
 
     Animator animator;
     private const string TRIGGER_CONSUME = "Consume";
@@ -30,6 +31,7 @@ public class TileController : MonoBehaviour
     public int Row { get { return row; } }
     public int Column { get { return column; } }
     public TurretType Reward { get { return reward; } }
+    public TileType GetTileType { get { return tileType; } }
 
 
     private void Awake() {
@@ -81,5 +83,9 @@ public class TileController : MonoBehaviour
     public void SetCoordinates(int row, int col) {
         this.row = row;
         this.column = col;
+    }
+
+    public void PlaceTurret() {
+        hasTurret = true;
     }
 }

@@ -145,6 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4577492581471178110}
   - component: {fileID: 4577492581471178105}
+  - component: {fileID: 2642272185490324575}
   m_Layer: 0
   m_Name: GameOverListener
   m_TagString: Untagged
@@ -196,6 +197,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2642272185490324575}
+        m_TargetAssemblyTypeName: StopTime, Assembly-CSharp
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &2642272185490324575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4577492581471178104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e26ecb36ab0cc4592fe438c39a4222, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4577492581999051083
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,6 +370,7 @@ GameObject:
   - component: {fileID: 4577492582237976057}
   - component: {fileID: 6667618497615023846}
   - component: {fileID: 4577492582237976061}
+  - component: {fileID: 857371273}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -461,6 +487,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 550c1617c28ec9c419fe340c23a01188, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &857371273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4577492582237976056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d19e038bf38d204496880cdf0184d3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 4577492583140807756}
+  waves:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 7aa7d7f1db840d54ca2abf846b898574, type: 2}
+  score:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 0eea277d0c11bae4ba8c34e628cec8c2, type: 2}
 --- !u!1 &4577492582377138566
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TileGO_Path0
       objectReference: {fileID: 0}
+    - target: {fileID: 3704325799334053079, guid: 1a4d99362a8b11845826082482c755bb, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7509866289460962015, guid: 1a4d99362a8b11845826082482c755bb, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -54,6 +58,10 @@ PrefabInstance:
     - target: {fileID: 7509866289460962015, guid: 1a4d99362a8b11845826082482c755bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571192170917831283, guid: 1a4d99362a8b11845826082482c755bb, type: 3}
+      propertyPath: tileType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a4d99362a8b11845826082482c755bb, type: 3}
