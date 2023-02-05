@@ -6,10 +6,6 @@ using UnityEngine;
 public class SquirrelTurret : BaseTurret
 {
     [SerializeField]
-    SphereCollider turretCollider;
-    [SerializeField]
-    Animator animator;
-    [SerializeField]
     Transform accornSpawner;
     [SerializeField]
     ObjectPool accornPool;
@@ -19,7 +15,7 @@ public class SquirrelTurret : BaseTurret
     List<GameObject> targets = new List<GameObject>();
 
     private void Start() {
-        turretCollider.radius = currentSettings.range;
+        base.Start();
         timeFromLastAttack = currentSettings.cooldown;
     }
 
@@ -56,10 +52,13 @@ public class SquirrelTurret : BaseTurret
     }
 
     private void SpawnAccorn() {
-        AccornBulletController element = (AccornBulletController)accornPool.GetNext();
-        element.transform.position = accornSpawner.transform.position;
-        element.SetTarget(targets.First().transform);
-        element.SetAccornDamage(currentSettings.damage);
-        element.gameObject.SetActive(true);
+        if (targets.Count > 0) {
+            AccornBulletController element = (AccornBulletController)accornPool.GetNext();
+            element.transform.position = accornSpawner.transform.position;
+            element.SetTarget(targets.First().transform);
+            element.SetAccornDamage(currentSettings.damage);
+            element.gameObject.SetActive(true);
+
+        }
     }
 }

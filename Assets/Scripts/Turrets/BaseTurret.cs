@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class BaseTurret : PoolableObject
 {
+    [Header("Scriptable Levels")]
     [SerializeField] 
     private TurretScriptableObject level1Config;
     [SerializeField] 
     private TurretScriptableObject level2Config;
     [SerializeField] 
     private TurretScriptableObject level3Config;
+
+    [Header("Own Components")]
+    [SerializeField]
+    protected SphereCollider turretCollider;
+    [SerializeField]
+    protected Animator animator;
 
     private int currentLevel = 1;
     private int maxLevel = 3;
@@ -21,6 +28,10 @@ public class BaseTurret : PoolableObject
         // Init level dictionary
         InitLevelDict();
         currentSettings = confiByLevel[currentLevel];
+    }
+
+    protected void Start() {
+        turretCollider.radius = currentSettings.range;
     }
 
     private void InitLevelDict() {
