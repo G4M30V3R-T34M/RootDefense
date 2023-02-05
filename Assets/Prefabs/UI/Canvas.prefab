@@ -573,6 +573,7 @@ GameObject:
   - component: {fileID: 3021447991274713814}
   - component: {fileID: 3021447991274713805}
   - component: {fileID: 3021447991274713802}
+  - component: {fileID: 7605805303382167627}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -707,6 +708,34 @@ MonoBehaviour:
   ForestBar: {fileID: 3021447992610981572}
   RootsBar: {fileID: 3021447992264559798}
   gameMode: {fileID: 11400000, guid: ac8e592a7e096ca47a734b16818ecbe7, type: 2}
+--- !u!114 &7605805303382167627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3021447991274713815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d503f1659a864241868e51ff877a07e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 2a21c8ac6e412c9408f7b81f9225ab68, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3021447991274713815}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3021447991280813332
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,7 +803,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Waves:'
+  m_text: 'Oleadas:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1938,7 +1967,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.294, y: 0.91375005}
   m_AnchorMax: {x: 0.294, y: 0.91375005}
-  m_AnchoredPosition: {x: 258, y: -29.541748}
+  m_AnchoredPosition: {x: 265.9, y: -29.541748}
   m_SizeDelta: {x: 206.8, y: 71.399994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3021447992224200502
@@ -2163,7 +2192,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score:'
+  m_text: 'Puntos:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2387,7 +2416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.64000005, y: 0.91375005}
   m_AnchorMax: {x: 0.64000005, y: 0.91375005}
-  m_AnchoredPosition: {x: 90.76196, y: -29.541748}
+  m_AnchoredPosition: {x: 107.56, y: -29.541748}
   m_SizeDelta: {x: 251.7, y: 71.399994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3021447992644235010
