@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using Unity.Services.RemoteConfig;
 using UnityEngine;
 
-public class UpdateEnemySpawnerSettings : MonoBehaviour
+public class UpdateSettingsByKeySettings : MonoBehaviour
 {
     [SerializeField]
-    private EnemySpawnerScriptableObject SpawnerSettings;
+    string remoteKey;
+    [SerializeField]
+    private ScriptableObject scriptableSettings;
 
     public struct userAttributes { };
     public struct appAttributes { };
@@ -17,8 +19,8 @@ public class UpdateEnemySpawnerSettings : MonoBehaviour
     }
     
     private void ApplyRemoteSettings(ConfigResponse configResponse) {
-        var spawnerConfig = RemoteConfigService.Instance.appConfig.GetJson("SpawnerSettings");
-        JsonUtility.FromJsonOverwrite(spawnerConfig, SpawnerSettings);
+        var remoteConfig = RemoteConfigService.Instance.appConfig.GetJson(remoteKey);
+        JsonUtility.FromJsonOverwrite(remoteConfig, scriptableSettings);
 
     }
 }
