@@ -1,7 +1,8 @@
+using FeTo.ObjectPool;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseTurret : MonoBehaviour
+public class BaseTurret : PoolableObject
 {
     [SerializeField] 
     private TurretScriptableObject level1Config;

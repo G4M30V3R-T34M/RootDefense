@@ -8,47 +8,59 @@ public class SquirrelTurret : BaseTurret
     [SerializeField]
     SphereCollider turretCollider;
     [SerializeField]
+    Animator animator;
+    [SerializeField]
     Transform accornSpawner;
     [SerializeField]
-    ObjectPool accornPool; // this must be inyected by squirrel spawner
+    ObjectPool accornPool;
 
     float timeFromLastAttack;
 
-    List<GameObject> Targets = new List<GameObject>();
+    List<GameObject> targets = new List<GameObject>();
 
     private void Start() {
         turretCollider.radius = currentSettings.range;
         timeFromLastAttack = currentSettings.cooldown;
     }
 
+    public void SetAccornPool(ObjectPool injectedPool) {
+        accornPool = injectedPool;
+    }
+
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.layer == (int)Layer.Enemy) {
-            Targets.Add(other.gameObject);
+            targets.Add(other.gameObject);
         }
     }
 
     private void OnTriggerExit(Collider other) {
+        print("Exit");
         if(other.gameObject.layer == (int)Layer.Enemy) {
-            Targets.Remove(other.gameObject);
+            targets.Remove(other.gameObject);
         }
     }
 
     private void Update() {
+        if(targets.Count > 0) {
+            transform.LookAt(targets.First().transform);
+            transform.Rotate(0, 180, 0); // TODO Sorry, change rotation on anims
+        }
         timeFromLastAttack += Time.deltaTime;
         if(CanAttack()) {
-            // play animation
+            animator.SetTrigger("Attack");
             timeFromLastAttack = 0;
         }
     }
 
     private bool CanAttack() {
-        return timeFromLastAttack >= currentSettings.cooldown && Targets.Count > 0;
+        return timeFromLastAttack >= currentSettings.cooldown && targets.Count > 0;
     }
 
     private void SpawnAccorn() {
         AccornBulletController element = (AccornBulletController)accornPool.GetNext();
         element.transform.position = accornSpawner.transform.position;
-        element.GetComponent<AccornBulletController>().SetTarget(Targets.First().transform);
+        element.SetTarget(targets.First().transform);
+        element.SetAccornDamage(currentSettings.damage);
         element.gameObject.SetActive(true);
     }
 }
