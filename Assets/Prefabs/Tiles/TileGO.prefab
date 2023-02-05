@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4405521489615830679}
   - component: {fileID: 7571192170917831283}
   - component: {fileID: 4991836652160695092}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TileGO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 4791074861769360472}
   - component: {fileID: 3228195289053846128}
   - component: {fileID: 6194974232646976797}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Reward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
