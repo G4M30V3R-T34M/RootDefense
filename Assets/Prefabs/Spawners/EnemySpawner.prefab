@@ -191,7 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrowErrorOnEmpty: 1
   poolSize: 80
-  prefab: {fileID: 6506993849264590573, guid: 9129b83fdb9169d488a5dc76c22d8727, type: 3}
+  prefab: {fileID: 839733588895188964, guid: 9129b83fdb9169d488a5dc76c22d8727, type: 3}
   pool: []
 --- !u!114 &4246007700756764122
 MonoBehaviour:
@@ -282,7 +282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThrowErrorOnEmpty: 1
   poolSize: 80
-  prefab: {fileID: 6506993849264590573, guid: 16af3949c25535d4f9961f8ec23d11d9, type: 3}
+  prefab: {fileID: 8340675538828684683, guid: 16af3949c25535d4f9961f8ec23d11d9, type: 3}
   pool: []
 --- !u!114 &4246007700892711878
 MonoBehaviour:

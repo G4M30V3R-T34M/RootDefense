@@ -4,6 +4,7 @@ using FeTo.ObjectPool;
 using FeTo.SOArchitecture;
 using System.Linq;
 using JetBrains.Annotations;
+using UnityEngine.InputSystem.Processors;
 
 [RequireComponent(typeof(HealthManager))]
 public class Enemy : PoolableObject
@@ -21,6 +22,7 @@ public class Enemy : PoolableObject
 
     private Vector3 target;
     private int currentTarget;
+    private bool isAlive;
 
     HealthManager healthManager;
     Rigidbody rb;
@@ -41,6 +43,7 @@ public class Enemy : PoolableObject
         currentTarget = 0;
         target = enemyPath.path[0];
         transform.LookAt(target);
+        isAlive = true;
     }
 
     public void TakeDamage(float damage) {
@@ -48,6 +51,7 @@ public class Enemy : PoolableObject
     }
 
     public void DieAction() {
+        isAlive = false;
         animator.SetTrigger("Die");
         rb.detectCollisions = false;
         score.ApplyChange(enemySettings.points);
@@ -56,10 +60,12 @@ public class Enemy : PoolableObject
     }
 
     private void Update() {
-        if (Vector3.Distance(transform.position, target) <= 0) {
-            SetNextTarget();
+        if (isAlive) {
+            if (Vector3.Distance(transform.position, target) <= 0) {
+                SetNextTarget();
+            }
+            transform.position = Vector3.MoveTowards(transform.position, target, enemySettings.speed * Time.deltaTime);
         }
-        transform.position = Vector3.MoveTowards(transform.position, target, enemySettings.speed * Time.deltaTime);
     }
 
     private void SetNextTarget() {

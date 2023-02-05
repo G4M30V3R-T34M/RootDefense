@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turretType: 0
   damage: 1
-  range: 1
+  range: 4
   validTile: 0
+  cost: 50
   slowDown: 0
-  cooldown: 2.1
+  cooldown: 1
   hitEach: 0
   areaEffect: 0
   areaRange: 0

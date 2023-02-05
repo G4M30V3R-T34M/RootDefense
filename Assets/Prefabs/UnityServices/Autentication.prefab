@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   remoteKey: SpawnerSettings
-  scriptableSettings: {fileID: 0}
+  scriptableSettings: {fileID: 11400000, guid: 3f94b686b2568e3409c26ed23ab63c89, type: 2}
 --- !u!114 &862989717
 MonoBehaviour:
   m_ObjectHideFlags: 0
