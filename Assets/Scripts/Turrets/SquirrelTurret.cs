@@ -1,5 +1,6 @@
 using FeTo.ObjectPool;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class SquirrelTurret : BaseTurret
@@ -7,7 +8,9 @@ public class SquirrelTurret : BaseTurret
     [SerializeField]
     SphereCollider turretCollider;
     [SerializeField]
-    ObjectPool AccornPool; // this must be inyected by squirrel spawner
+    Transform accornSpawner;
+    [SerializeField]
+    ObjectPool accornPool; // this must be inyected by squirrel spawner
 
     float timeFromLastAttack;
 
@@ -33,12 +36,19 @@ public class SquirrelTurret : BaseTurret
     private void Update() {
         timeFromLastAttack += Time.deltaTime;
         if(CanAttack()) {
-            //Shoot bullet from object pool
+            // play animation
             timeFromLastAttack = 0;
         }
     }
 
     private bool CanAttack() {
         return timeFromLastAttack >= currentSettings.cooldown && Targets.Count > 0;
+    }
+
+    private void SpawnAccorn() {
+        AccornBulletController element = (AccornBulletController)accornPool.GetNext();
+        element.transform.position = accornSpawner.transform.position;
+        element.GetComponent<AccornBulletController>().SetTarget(Targets.First().transform);
+        element.gameObject.SetActive(true);
     }
 }
