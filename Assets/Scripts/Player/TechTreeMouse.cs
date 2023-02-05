@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
 using UnityEngine.UI;
+using FeTo.SOArchitecture;
+using FeTo.ObjectPool;
 
 public class TechTreeMouse : MonoBehaviour
 {
@@ -15,7 +17,12 @@ public class TechTreeMouse : MonoBehaviour
     [SerializeField] TextMeshProUGUI extraRewardText;
     [SerializeField] Image extraRewardImage;
 
+    [SerializeField] FloatVariable rootsResource;
+    [SerializeField] FloatVariable treesResource;
+
     [SerializeField] Sprite squirelSprite, brambleSprite, mushroomSprite, whoopingwillowSprite;
+
+    [SerializeField] ObjectPool rootsPool;
 
     private GameObject previousGO, currentGO;
 
@@ -26,7 +33,6 @@ public class TechTreeMouse : MonoBehaviour
     void Update()
     {
         Vector3 mousePos = Mouse.current.position.ReadValue();
-        Debug.Log($"Mouse {mousePos.x}, {mousePos.y}, {mousePos.z}");
 
         RaycastHit hit;
         Ray ray = mainCamera.ScreenPointToRay(mousePos);
@@ -35,14 +41,33 @@ public class TechTreeMouse : MonoBehaviour
             if (previousGO != hit.collider.gameObject) {
                 TileController tile = hit.collider.gameObject.GetComponent<TileController>();
                 SetCostValues(tile);
+                previousGO = hit.collider.gameObject;
+                follower.SetActive(true);
+                follower.transform.position = tile.transform.position + new Vector3(0, -.2f, 0);
             }
-            follower.transform.position = hit.point;
         } else {
             if (previousGO != null) {
                 EmptyValues();
                 previousGO = null;
+                follower.SetActive(false);
             }
         }
+    }
+
+    public void PlayerClick() {
+        if (previousGO == null) { return; }
+        TileController tile = previousGO.GetComponent<TileController>();
+        if (tile.HasRoot || !map.IsReachable(tile.Row, tile.Column)) { return; }
+        TileController closest = map.GetClosestReachable(tile.Row, tile.Column);
+        if (closest.DistanceToTree + 1 > rootsResource.Value) { return; }
+
+        rootsResource.ApplyChange(-1 * (closest.DistanceToTree + 1));
+
+        RootController root = (RootController) rootsPool.GetNext();
+        root.SetOriginAndDestination(closest, tile);
+        root.ReadyRoot();
+        root.gameObject.SetActive(true);
+        root.GrowRoot();
     }
 
     private void EmptyValues() {

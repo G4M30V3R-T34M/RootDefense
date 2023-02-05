@@ -15,6 +15,7 @@ public class RootController : PoolableObject
     }
 
     public void ReadyRoot() {
+        transform.position = originTile.transform.position;
         transform.LookAt(new Vector3(
             destinationTile.transform.position.x,
             -0.2f,
