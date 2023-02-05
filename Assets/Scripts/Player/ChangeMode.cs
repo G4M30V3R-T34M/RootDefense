@@ -11,6 +11,7 @@ public class ChangeMode : MonoBehaviour
     [SerializeField]
     GameEvent changeCamera;
     private void OnEnable() {
+        Debug.Log("Performed subscription");
         changeMode.action.performed += DoChangePointOfView;
     }
 
@@ -18,7 +19,8 @@ public class ChangeMode : MonoBehaviour
         changeMode.action.performed -= DoChangePointOfView;
     }
 
-    private void DoChangePointOfView(InputAction.CallbackContext obj) {
+    public void DoChangePointOfView(InputAction.CallbackContext obj) {
+        Debug.Log("Perfomring - Changemode - DoChangePointOfView");
         changeCamera.Raise();
     }
 }
