@@ -52,13 +52,16 @@ public class TechTreeMouse : MonoBehaviour
     }
 
     private void SetCostValues(TileController tile) {
-
-        TileController closestTile = map.GetClosestReachable(tile.Row, tile.Column);
-        if (closestTile != null) {
-            int cost = closestTile.DistanceToTree + 1; 
-            costText.SetText(cost.ToString());
-        } else {
+        if (tile.HasRoot) {
             costText.SetText("---");
+        } else {
+            TileController closestTile = map.GetClosestReachable(tile.Row, tile.Column);
+            if (closestTile != null) {
+                int cost = closestTile.DistanceToTree + 1; 
+                costText.SetText(cost.ToString());
+            } else {
+                costText.SetText("---");
+            }
         }
 
         if (tile.HasReward) {
