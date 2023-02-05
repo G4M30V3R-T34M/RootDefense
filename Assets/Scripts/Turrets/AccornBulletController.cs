@@ -12,7 +12,12 @@ public class AccornBulletController : PoolableObject
     
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, target.position + new Vector3(0, 1.54f, 0), accornSettings.speed * Time.deltaTime);
+        print(Vector3.Distance(target.position + new Vector3(0, 1.54f, 0), transform.position));
+        if(Vector3.Distance(target.position + new Vector3(0, 1.54f, 0), transform.position) >= 0.01f) {
+            transform.position = Vector3.MoveTowards(transform.position, target.position + new Vector3(0, 1.54f, 0), accornSettings.speed * Time.deltaTime);
+        } else {
+            gameObject.SetActive(false);
+        }
     }
 
     public void SetTarget(Transform targetTransform) {
