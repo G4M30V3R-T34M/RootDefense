@@ -34,7 +34,6 @@ public class SquirrelTurret : BaseTurret
     }
 
     private void OnTriggerExit(Collider other) {
-        print("Exit");
         if(other.gameObject.layer == (int)Layer.Enemy) {
             targets.Remove(other.gameObject);
         }
