@@ -76,8 +76,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d347b45a636c4de4bb411389003382a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySettings: {fileID: 11400000, guid: 4b03eae540f199c4e8266b5548469064, type: 2}
   animator: {fileID: 1610880819}
+  gameOverEvent: {fileID: 11400000, guid: 2a21c8ac6e412c9408f7b81f9225ab68, type: 2}
+  enemySettings: {fileID: 11400000, guid: 4b03eae540f199c4e8266b5548469064, type: 2}
+  enemyPath: {fileID: 11400000, guid: c401b5f050f24524d880ce25041f6b8d, type: 2}
   score: {fileID: 11400000, guid: 0eea277d0c11bae4ba8c34e628cec8c2, type: 2}
   ResourcesToGrowRoots: {fileID: 11400000, guid: d673f38f56ce05149b5f1aaafa038cce, type: 2}
 --- !u!136 &6506993849264590572

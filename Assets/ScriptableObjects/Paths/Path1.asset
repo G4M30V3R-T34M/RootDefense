@@ -12,4 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 493436d7be142d440b7e141339b78f46, type: 3}
   m_Name: Path1
   m_EditorClassIdentifier: 
-  path: []
+  path:
+  - {x: 7.79, y: 0, z: -1.5}
+  - {x: 6.05, y: 0, z: -1.5}
+  - {x: 3.46, y: 0, z: 3}
+  - {x: 1.77, y: 0, z: 3}
+  - {x: -0.85, y: 0, z: -1.5}
+  - {x: -2.58, y: 0, z: -1.5}
+  - {x: -3.453, y: 0, z: -3}
+  - {x: -5.19, y: 0, z: 0}
+  - {x: -6.92, y: 0, z: 0}
