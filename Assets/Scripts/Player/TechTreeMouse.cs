@@ -16,9 +16,7 @@ public class TechTreeMouse : MonoBehaviour
 
         RaycastHit hit;
         Ray ray = mainCamera.ScreenPointToRay(mousePos);
-
         LayerMask.GetMask("Ground");
-
         if (Physics.Raycast(ray, out hit, 20)) {
             follower.transform.position = hit.point;
         }
