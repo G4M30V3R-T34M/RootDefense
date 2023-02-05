@@ -18,7 +18,7 @@ MonoBehaviour:
   validTile: 0
   cost: 50
   slowDown: 0
-  cooldown: 0.3
+  cooldown: 2.1
   hitEach: 0
   areaEffect: 0
   areaRange: 0

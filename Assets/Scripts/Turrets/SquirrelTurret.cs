@@ -10,29 +10,8 @@ public class SquirrelTurret : BaseTurret
     [SerializeField]
     ObjectPool accornPool;
 
-    float timeFromLastAttack;
-
-    List<GameObject> targets = new List<GameObject>();
-
-    private void Start() {
-        base.Start();
-        timeFromLastAttack = currentSettings.cooldown;
-    }
-
     public void SetAccornPool(ObjectPool injectedPool) {
         accornPool = injectedPool;
-    }
-
-    private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.layer == (int)Layer.Enemy) {
-            targets.Add(other.gameObject);
-        }
-    }
-
-    private void OnTriggerExit(Collider other) {
-        if(other.gameObject.layer == (int)Layer.Enemy) {
-            targets.Remove(other.gameObject);
-        }
     }
 
     private void Update() {
@@ -45,10 +24,6 @@ public class SquirrelTurret : BaseTurret
             animator.SetTrigger("Attack");
             timeFromLastAttack = 0;
         }
-    }
-
-    private bool CanAttack() {
-        return timeFromLastAttack >= currentSettings.cooldown && targets.Count > 0;
     }
 
     private void SpawnAccorn() {

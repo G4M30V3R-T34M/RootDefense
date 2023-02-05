@@ -24,6 +24,9 @@ public class BaseTurret : PoolableObject
 
     Dictionary<int, TurretScriptableObject> confiByLevel = new Dictionary<int, TurretScriptableObject>();
 
+    protected List<GameObject> targets = new List<GameObject>();
+    protected float timeFromLastAttack;
+
     private void Awake() {
         // Init level dictionary
         InitLevelDict();
@@ -32,6 +35,7 @@ public class BaseTurret : PoolableObject
 
     protected void Start() {
         turretCollider.radius = currentSettings.range;
+        timeFromLastAttack = currentSettings.cooldown;
     }
 
     private void InitLevelDict() {
@@ -50,5 +54,21 @@ public class BaseTurret : PoolableObject
 
     public bool CanBeUpgraded() {
         return currentLevel < maxLevel;
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.layer == (int)Layer.Enemy) {
+            targets.Add(other.gameObject);
+        }
+    }
+
+    private void OnTriggerExit(Collider other) {
+        if (other.gameObject.layer == (int)Layer.Enemy) {
+            targets.Remove(other.gameObject);
+        }
+    }
+
+    protected bool CanAttack() {
+        return timeFromLastAttack >= currentSettings.cooldown && targets.Count > 0;
     }
 }

@@ -6,7 +6,7 @@ public class TurretScriptableObject : ScriptableObject
     [Header("Common configuration")]
     public TurretType turretType;
     public int damage;
-    public int range;
+    public float range;
     public TileType validTile;
     public int cost;
 
