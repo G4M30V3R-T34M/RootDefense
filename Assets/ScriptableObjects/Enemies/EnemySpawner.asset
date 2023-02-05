@@ -12,3 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 750eef6708fd9914aafedb7ecaf295a2, type: 3}
   m_Name: EnemySpawner
   m_EditorClassIdentifier: 
+  timeBetweenSpawn: 0
+  timeBetweenWave: 0
+  numberOfEnemies: 0
+  normalEnemyPerc: 0
+  fastEnemyPerc: 0
+  slowEnemyPerc: 0
