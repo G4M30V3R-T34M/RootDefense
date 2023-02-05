@@ -10,7 +10,7 @@ public class AlternBottomGroups : MonoBehaviour
     [SerializeField]
     GameObject RootsBar;
 
-    [SerializeField] IntReference gameMode;
+    [SerializeField] IntVariable gameMode;
 
     private void Start() {
         ForestBar.SetActive(true);
@@ -18,7 +18,7 @@ public class AlternBottomGroups : MonoBehaviour
     }
 
     public void AlternBars() {
-        ForestBar.SetActive(gameMode == (int)GameMode.DEFENSE);
-        RootsBar.SetActive(gameMode == (int)GameMode.TECHTREE);
+        ForestBar.SetActive(gameMode.Value == (int)GameMode.DEFENSE);
+        RootsBar.SetActive(gameMode.Value == (int)GameMode.TECHTREE);
     }
 }
